@@ -1,18 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Festive&family=Fira+Sans&family=Heebo:wght@800&family=Mulish:wght@700&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,700;0,800;1,600;1,800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Festive&family=Fira+Sans&family=Heebo:wght@800&family=Mulish:wght@700&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,700;0,800;1,600;1,800&display=swap"); */
 
 body {
   margin: 0;
-  background-color: rgb(154, 154, 198);
+  background-color: salmon;
   display: flex;
   justify-content: center;
   height: 100vh;
   align-items: center;
-  font-family: "Bebas Neue", cursive;
+  /* font-family: "Bebas Neue", cursive;
   font-family: "Festive", cursive;
   font-family: "Fira Sans", sans-serif;
   font-family: "Heebo", sans-serif;
   font-family: "Mulish", sans-serif;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif; */
+  color: brown;
 }
 
 .containser {
@@ -23,6 +24,8 @@ body {
   width: 400px;
   height: 600px;
   margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
 }
 
 .one {
@@ -31,17 +34,44 @@ body {
 }
 
 .two {
-  background-color: rgb(204, 152, 152);
+  background-color: whitesmoke;
+  overflow: hidden;
 }
 .steps {
-  background-color: white;
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 120px;
+  height: 80px;
 }
 .step {
-  /* border: 2px solid red; */
-  /* width: 32%; */
-  text-align: center;
+  height: 100%;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 25px;
+  cursor: pointer;
+  margin: 0%;
+}
+
+.step:hover {
+  background-color: palevioletred;
+  color: rgb(85, 85, 85);
+  transition: 500ms;
+}
+
+h1 {
+  margin: 40px 40px;
+}
+
+p {
+  font-size: 20px;
+  margin: 40px;
+}
+
+.display {
+  display: none;
+}
+.active {
+  background-color: white;
 }
